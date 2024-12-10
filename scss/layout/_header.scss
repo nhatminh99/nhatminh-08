@@ -1,10 +1,14 @@
+%flexItemsCenter {
+    display: flex;
+    align-items: center;
+}
+
 .header {
     background: #eee;
 }
 
 .top-bar {
-    display: flex;
-    align-items: center;
+    @extend %flexItemsCenter;
 
     padding: 30px 0;
 }
@@ -14,14 +18,12 @@
     margin-right: auto;
 
     &__list {
-        display: flex;
-        align-items: center;
+        @extend %flexItemsCenter;
         column-gap: 30px;
     }
 
     &__link {
-        display: flex;
-        align-items: center;
+        @extend %flexItemsCenter;
         column-gap: 6px;
 
         font-size: 1.5rem;
@@ -35,13 +37,11 @@
 }
 
 .top-act {
-    display: flex;
-    align-items: center;
+    @extend %flexItemsCenter;
     column-gap: 20px;
 
     &__group {
-        display: flex;
-        align-items: center;
+        @extend %flexItemsCenter;
 
         min-width: 50px;
         height: 50px;
@@ -56,19 +56,18 @@
     }
 
     &__btn {
-        display: flex;
-        align-items: center;
+        @extend %flexItemsCenter;
         column-gap: 10px;
 
         padding: 13px 20px;
+
+        cursor: pointer;
     }
 
     &__title {
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.47;
-
-        color: #1a162e;
     }
 
     &__separate {
@@ -86,5 +85,7 @@
 
         border-radius: 8px;
         box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.08);
+
+        cursor: pointer;
     }
 }
