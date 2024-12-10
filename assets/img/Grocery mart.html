@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/index.html#! -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grocery mart</title>
+
+        <!-- Favicon -->
+        
+        
+        
+        
+        
+
+        <!-- Fonts -->
+        
+
+        <!-- Styles CSS -->
+        
+
+        <!-- Scripts -->
+        <script src="./Grocery mart_files/scripts.js.tải xuống"></script>
+    <link rel="icon" type="image/png" href="http://127.0.0.1:5500/assets/favicon/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/svg+xml" href="http://127.0.0.1:5500/assets/favicon/favicon.svg"><link rel="shortcut icon" href="http://127.0.0.1:5500/assets/favicon/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:5500/assets/favicon/apple-touch-icon.png"><link rel="manifest" href="http://127.0.0.1:5500/assets/favicon/site.webmanifest"><link rel="stylesheet" href="./Grocery mart_files/stylesheet.css"><link rel="stylesheet" href="./Grocery mart_files/main.css"></head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"><div class="container">
+    <div class="top-bar">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./Grocery mart_files/logo.svg" alt="grocerymart" class="logo__img">
+            <h1 class="logo__title">grocerymart</h1>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li>
+                    <a href="http://127.0.0.1:5500/index.html#!" class="navbar__link" style="
+    display: flex;
+    align-items: center;
+">
+                        Departments
+                        <img src="./Grocery mart_files/arrow-down.svg" alt="" class="navbar__arrow">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/index.html#!" class="navbar__link">
+                        Grocery
+                        <img src="./Grocery mart_files/arrow-down.svg" alt="" class="navbar__arrow">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/index.html#!" class="navbar__link">
+                        Beauty
+                        <img src="./Grocery mart_files/arrow-down.svg" alt="" class="navbar__arrow">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Action -->
+        <div class="top-act">
+            <div class="top-act__group">
+                <button class="top-act__btn">
+                    <img src="./Grocery mart_files/search.svg" alt="" class="top-act__icon">
+                </button>
+            </div>
+
+            <div class="top-act__group">
+                <button class="top-act__btn">
+                    <img src="./Grocery mart_files/heart.svg" alt="" class="top-act__icon">
+                    <span class="top-act__title">03</span>
+                </button>
+                <div class="top-act__separate"></div>
+                <button class="top-act__btn">
+                    <img src="./Grocery mart_files/buy.svg" alt="" class="top-act__icon">
+                    <span class="top-act__title">$65.42</span>
+                </button>
+            </div>
+
+            <div class="top-act__user">
+                <img src="./Grocery mart_files/avatar.jpg" alt="" class="top-act__avatar">
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+        <div class="container">
+            <!-- Main -->
+            <h1>Home page</h1>
+
+            <!-- Footer -->
+            <footer id="footer"><div class="footer__inner">
+    <h2>Footer</h2>
+</div>
+</footer>
+            <script>
+                load("#footer", "./template/footer.html");
+            </script>
+        </div>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
