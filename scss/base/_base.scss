@@ -21,10 +21,13 @@ a {
     text-decoration: none;
 }
 
+a,
 button,
 input,
 textarea,
 select {
+    -webkit-tap-highlight-color: transparent;
+
     font-family: inherit;
     font-size: inherit;
 
