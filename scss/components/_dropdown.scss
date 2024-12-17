@@ -100,12 +100,13 @@
         line-height: 1.5;
     }
 
-    & {
-        &:hover .sub-menu {
+    &__item {
+        &--active .sub-menu {
             display: grid;
         }
     }
 
+    &__item--active > &__link,
     &__item:hover > &__link {
         font-weight: 500;
 
